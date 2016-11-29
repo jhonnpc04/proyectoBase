@@ -2,10 +2,28 @@
 <html>
   <head>
     <title><%= title %></title>
+
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Bienvenido a <%= title %></p>
+    <p>Bienvenidos a <%= subtitle %></p>
+    <table>
+    	<tr>
+    	<td>
+    		<%= reclamo.tiporeclamo %>
+    	</td>
+       	</tr>
+    	<tr>
+    	<td>
+    			<%= reclamo.observacion %>
+    	</td>
+     	</tr>
+    	<tr>
+    		<td>
+    			<%= reclamo.fechareclamo %>
+    		</td>
+    	</tr>
+    </table>
   </body>
 </html>
