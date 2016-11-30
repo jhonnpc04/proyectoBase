@@ -8,22 +8,19 @@
   <body>
     <h1><%= title %></h1>
     <p>Bienvenidos a <%= subtitle %></p>
-    <table>
+    <table border="1">
     	<tr>
-    	<td>
-    		<%= reclamo.tiporeclamo %>
-    	</td>
+    		<td>tipo reclamo</td>
+    		<td>observacion</td>
+    		<td>Fecha observacion</td>
        	</tr>
-    	<tr>
-    	<td>
-    			<%= reclamo.observacion %>
-    	</td>
-     	</tr>
-    	<tr>
-    		<td>
-    			<%= reclamo.fechareclamo %>
-    		</td>
-    	</tr>
+       	<tr>
+       		<td><%= reclamo.tiporeclamo %></td>
+       		<td><%= reclamo.observacion %></td>	
+       		<td><%= reclamo.fechareclamo %>	</td>
+       	
+       	</tr>
+    		
     </table>
   </body>
 </html>
